@@ -1,15 +1,13 @@
-const newArray = ["cat", "dog", 'goose', "AR-15", "unicorn", "aaaaaaa"];
+const names=["Jeremy","David","Josh","Xerxes"];
 
-async function waitForTheSignal() {
-  for( let x=0; x < newArray.length; x++ ) {
-    console.log("Look, I've got a " + newArray[x]);
-    await sleep(1000);
-  }
+var theBoss;
+function assignName(value){
+  theBoss=value;
 }
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+/////////////////////////////////////////////////////////
+
+for(let x=0;x<names.length;x++){
+  assignName(names[x])
+  console.log(theBoss)
 }
-
-waitForTheSignal();
-
