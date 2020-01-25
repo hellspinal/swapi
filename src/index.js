@@ -31,3 +31,13 @@ for(let x=100000;x>=0;x--){
     console.log("Machine Failure")
   }
 }
+
+function newCode() {
+  const x = {
+    someStuff: "new things",
+    someOtherStuff: {
+      x: "Complex new changes"
+    }
+  }
+  return x.x;
+}
